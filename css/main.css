@@ -188,8 +188,6 @@ section {
 
 .container.is-narrow {
   max-width: 1200px;
-  display: block;
-  position: relative;
 }
 .container {
     -webkit-box-flex: 0;
@@ -304,9 +302,6 @@ section.skills p {
   
 }
 
-.is-centered {
-  min-width: 120px;
-}
 
 .image_img {
   min-width: 100%;
@@ -360,6 +355,12 @@ section.skills p {
 
 .image_overlay:hover > * {
   transform: translateY(0);
+}
+
+@media (max-width: 320px){
+  .project-grid {
+    display: block;
+  }
 }
 
 
@@ -673,15 +674,23 @@ footer .social-icons a.button {
   background-color: transparent;
   color: white;
   border-radius: 100%;
-  margin: 0 0.2rem;
+  margin: 0 0.9rem;
   height: 47px;
   width: 47px;
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 
-footer .copyright {
+footer .copyright  {
   opacity: 0.7;
   font-family: poppins;
   font-size: 12px;
+
+}
+
+footer .copyright p  {
+  opacity: 0.7;
+  font-family: poppins;
+  font-size: 12px;
+  margin-bottom: 2rem;
 }
